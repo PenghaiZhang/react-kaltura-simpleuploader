@@ -37,12 +37,12 @@ jobs:
         run: npm run build
 
       - name: Package
-        run: tar -zcvf react-kaltura-simpleuploader-1.0.0-npm.tgz dist src package.json README.md
+        run: npm pack
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: react-kaltura-simpleuploader-1.0.0-npm.tgz
+          files: openequella-react-kaltura-simpleuploader-1.0.0.tgz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
