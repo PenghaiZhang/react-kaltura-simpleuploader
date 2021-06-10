@@ -2,10 +2,6 @@
   "name": "@openequella/react-kaltura-simpleuploader",
   "version": "1.0.0",
   "description": "A simple React upload component for Kaltura.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PenghaiZhang/react-kaltura-simpleuploader.git"
-  },
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
